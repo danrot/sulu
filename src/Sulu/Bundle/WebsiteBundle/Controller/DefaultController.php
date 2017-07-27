@@ -29,8 +29,9 @@ class DefaultController extends WebsiteController
      *
      * @return Response
      */
-    public function indexAction(StructureInterface $structure, $preview = false, $partial = false)
+    public function indexAction(StructureInterface $structure, $preview = false, $partial = false, $webspace)
     {
+        var_dump($webspace);
         $response = $this->renderStructure(
             $structure,
             [],
